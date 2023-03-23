@@ -1,7 +1,8 @@
 import React from 'react';
-import { FiArrowLeft } from 'react-icons/fi';
 
 import { useRouter } from 'next/router';
+
+import { IconArrowLeft } from '@/assets/icons';
 
 import Content from './components/Content';
 import Header from './components/Header';
@@ -26,7 +27,7 @@ const MealDetail: React.FC<Props> = ({ meal }) => {
       <div className={styles.container}>
         <div>
           <button className={styles.back} onClick={handleGoBack}>
-            <FiArrowLeft />
+            <IconArrowLeft />
             <span>Back to Recipes</span>
           </button>
 

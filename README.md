@@ -61,8 +61,8 @@ This application was built using Next.js, React functions for backend integratio
 
 ### Features
 
-- You can view a chart comparing their GDPs over time
-- You can view a list or table of countries with their GDP data
+- You can search recipe on input
+- You can view the detail for selected recipe
 
 ## Getting Started
 
