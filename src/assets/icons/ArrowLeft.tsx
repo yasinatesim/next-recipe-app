@@ -1,5 +1,5 @@
-import * as React from "react"
-import { SVGProps } from "react"
+import * as React from 'react';
+import { SVGProps } from 'react';
 
 const IconArrowLeft = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -16,6 +16,6 @@ const IconArrowLeft = (props: SVGProps<SVGSVGElement>) => (
   >
     <path d="M19 12H5M12 19l-7-7 7-7" />
   </svg>
-)
+);
 
-export default IconArrowLeft
+export default IconArrowLeft;
