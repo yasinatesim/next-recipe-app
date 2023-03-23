@@ -7,11 +7,10 @@ import styles from './Content.module.scss';
 import { Meal } from '@/types/meal';
 
 type Props = {
-	meal: Meal;
-}
+  meal: Meal;
+};
 
 const Content: React.FC<Props> = ({ meal }) => {
-
   const { strInstructions, strSource, strYoutube } = meal;
 
   return (

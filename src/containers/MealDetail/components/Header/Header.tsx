@@ -13,7 +13,6 @@ import ListItem from '../ListItem';
 import styles from './Header.module.scss';
 
 const Header: React.FC<Props> = ({ meal }) => {
-
   const { strMeal, strCategory, strArea, strTags, strMealThumb } = meal;
 
   return (
@@ -27,7 +26,14 @@ const Header: React.FC<Props> = ({ meal }) => {
         </div>
       </div>
       <div className={styles.imageWrapper}>
-        <Image width={700} height={700} src={strMealThumb} alt={strMeal} placeholder="blur" blurDataURL={strMealThumb} />
+        <Image
+          width={700}
+          height={700}
+          src={strMealThumb}
+          alt={strMeal}
+          placeholder="blur"
+          blurDataURL={strMealThumb}
+        />
       </div>
     </div>
   );

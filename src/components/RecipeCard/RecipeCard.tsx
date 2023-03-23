@@ -8,11 +8,12 @@ import styles from './RecipeCard.module.scss';
 import { Meal } from '@/types/meal';
 
 type Props = {
-  recipe: Meal
+  recipe: Meal;
 };
 
 const RecipeCard: React.FC<Props> = ({ recipe }) => {
-  const shortInstructions = recipe.strInstructions.length > 50 ? `${recipe.strInstructions.substring(0, 50)}...` : recipe.strInstructions;
+  const shortInstructions =
+    recipe.strInstructions.length > 50 ? `${recipe.strInstructions.substring(0, 50)}...` : recipe.strInstructions;
   const [loading, setLoading] = React.useState<boolean>(true);
 
   return (
@@ -36,10 +37,7 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
           {recipe.strCategory} - {recipe.strArea}
         </div>
         {recipe.strInstructions.length > 50 && (
-          <Link
-            className={styles.button}
-            href={`/meal-detail/${recipe.idMeal}`}
-          >
+          <Link className={styles.button} href={`/meal-detail/${recipe.idMeal}`}>
             View Details
           </Link>
         )}

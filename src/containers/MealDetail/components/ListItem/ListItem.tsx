@@ -14,11 +14,7 @@ const List: React.FC<Props> = ({ detail, label, link = '' }) => {
       {detail && (
         <li key={label} className={styles.item}>
           <span className={styles.label}>{label}:</span>
-          {link ? (
-            <a href={link}>{detail}</a>
-          ) : (
-            <span className={styles.text}>{detail}</span>
-          )}
+          {link ? <a href={link}>{detail}</a> : <span className={styles.text}>{detail}</span>}
         </li>
       )}
     </>

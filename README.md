@@ -92,7 +92,6 @@ yarn install
 yarn dev
 ```
 
-
 ### For Docker
 
 2. Change the directory

@@ -5,9 +5,7 @@ import { getMealDetail } from '@/services/meal';
 import { Meal } from '@/types/meal';
 
 const MealDetailPage: React.FC<{ meal: Meal }> = ({ meal }) => {
-  return (
-    <MealDetail meal={meal} />
-  );
+  return <MealDetail meal={meal} />;
 };
 
 export default MealDetailPage;

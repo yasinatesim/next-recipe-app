@@ -19,7 +19,7 @@ const RecipeList: React.FC<Props> = ({ recipes }) => {
     const delayDebounceFn = setTimeout(async () => {
       try {
         if (searchTerm) {
-          const {meals} = await getMealSearch({ searchTerm });
+          const { meals } = await getMealSearch({ searchTerm });
           setMeals(meals || []);
         } else {
           setMeals([]);
@@ -28,7 +28,6 @@ const RecipeList: React.FC<Props> = ({ recipes }) => {
         console.error(error);
       }
     }, 500);
-
 
     return () => clearTimeout(delayDebounceFn);
   }, [searchTerm]);
